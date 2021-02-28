@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>OSU Art3001</title>
+    <style>
+        * {
+            text-align: center
+        }
+
+        /* The grid: Four equal columns that floats next to each other */
+        .column {
+            float: left;
+            height: 192px;
+            width: 192px;
+            padding: 15px;
+        }
+
+        /* Style the images inside the grid */
+        .column img {
+            opacity: 0.8;
+            height: 192px;
+            width: 192px;
+            cursor: pointer;
+        }
+
+        .column img:hover {
+            opacity: 1;
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* The expanding image container */
+        .container {
+            position: relative;
+            height: 540px;
+            width: 960px;
+            display: none;
+        }
+
+        /* Closable button inside the expanded image */
+        .closebtn {
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            color: white;
+            font-size: 35px;
+            cursor: pointer;
+        }
+        .navbar {
+      overflow: hidden;
+      background-color: #EDCEE5;
+      text-align: center;
+      color: black;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 500;
+      height: min-content;
+    
+    }
+    .navbar a {
+  float: none;
+  display: inline-block;
+  color: black;
+  padding: 0px 16px;
+  text-decoration: none;
+  font-size: 60px;
+  vertical-align: middle;
+}
+
+.navbar a:hover {
+  background: #bbd5f2;
+  color: black;
+}
+
+.main {
+  padding: 16px;
+  margin-top: 30px;
+  height: 1500px;
+}
+@font-face {
+   font-family: SydType;
+   src: url(../files/Sydtype-Regular.otf);
+}
+
+@font-face {
+   font-family: SydType;
+   src: url(../files/Sydtype-Regular.otf);
+   font-weight: bold;
+}
+
+* {
+   font-family: SydType;
+}
+    </style>
+</head>
+
+<body style="background-color:#F6F3F1">
+    <div class="navbar">
+        <a href="../home.html"><img src="../files/SK_logo2.png" width="81" height="45.6"> </a> 
+        <a href="../about.html" style="font-size: 40px;">About</a> 
+        <a href="../portfolio.html" style="font-size: 40px;">Portfolio</a>
+       <a href="../Collections/index.html" style="font-size: 40px;">Collections</a> 
+       <a href="../contact.html" style="font-size: 40px;">Contact</a>
+      </div>
+      <br>
+      <br>
+      <br>
+      <br>
+      <div style="font-size: 30px; text-align: center;">
+       <p style="font-size: 60px;"><b>Internet Art</b></p>
+        <nav>
+            <a href="exercises/index.html">Exercises</a>
+            <a href="blog/index.html">Blog</a>
+        </nav>
+        <br>
+        <br>
+
+    <p>Art 3001 : Internet Art is a class at The Ohio State University that was taken Spring 2021. This page has all
+        of the work done while in that class. </p>
+    <br>
+    <p>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <body>
+
+            <div style="text-align:center">
+            </div>
+
+            <!-- The four columns -->
+            <div class="row">
+                <div class="column">
+                    <img src="../files/SK_logo_ver2.jpg" alt="Logo" style="width:100%" onclick="myFunction(this);">
+                </div>
+                <div class="column">
+                    <img src="../files/" alt="Code" style="width:100%" onclick="myFunction(this);">
+                </div>
+                <div class="column">
+                    <img src="img/green screen.png" alt="Green Code" style="width:100%" onclick="myFunction(this);">
+                </div>
+                <div class="column">
+                    <img src="img/internet art.jpg" alt="Internet Style" style="width:100%" onclick="myFunction(this);">
+                </div>
+            </div>
+
+            <div class="container">
+                <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+                <img id="expandedImg" style="width:100%">
+                <div id="imgtext"></div>
+            </div>
+
+            <script>
+                function myFunction(imgs) {
+                    var expandImg = document.getElementById("expandedImg");
+                    var imgText = document.getElementById("imgtext");
+                    expandImg.src = imgs.src;
+                    imgText.innerHTML = imgs.alt;
+                    expandImg.parentElement.style.display = "block";
+                }
+            </script>
+</div>
+        </body>
+
+</html>
+</p>
+
+<footer>Sydney Kit 2021 </footer>
+</body>
+
+</html>
