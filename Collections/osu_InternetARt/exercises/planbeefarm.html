@@ -1,8 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="planbeefarm.css">
   <style>
     .box{
             display:flex;
@@ -71,10 +75,14 @@
 * {
    font-family: LoveMe;
 }
-a:link{text-decoration: underline;}
-a:visited{color: black;}
+a:link{text-decoration: none;}
+a:visited{color:white;}
+
+.navbar a:visited{
+  color:black
+}
   </style>
-<link rel="stylesheet" src="planbeefarm.css">
+
 </head>
 
 <body>
@@ -97,32 +105,51 @@ a:visited{color: black;}
 <br>
 <br>
 <br>
+
 <svg>
-    <defs>
-      <filter id="goo">
-        <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="name"/>
-        <feColorMatrix in="name" mode="matrix" values="1 0 0 0 0
-                                                       0 1 0 0 0
-                                                       0 0 1 0 0
-                                                       0 0 0 15 -10" result="b"/>
+  <defs>
+    <filter id="goo">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="name"/>
+      <feColorMatrix in="name" mode="matrix" values="1 0 0 0 0
+                                                     0 1 0 0 0
+                                                     0 0 1 0 0
+                                                     0 0 0 15 -10" result="b"/>
 
-        <feBlend in="SourceGraphic" in2="b" />
-      </filter>
-    </defs>
-  </svg>
+      <feBlend in="SourceGraphic" in2="b" />
+    </filter>
+  </defs>
+</svg>
 
-  <div class="wrapper">
-    <div id="container">
-      <p class="text">WELCOME</p>
-      <div class="drop"></div>
-    </div>
+<div class="wrapper">
+  <div id="container">
+    <p class="text">Plan Bee Farm</p>
+    <div class="drop"></div>
   </div>
+</div>
+<br>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 <div style="font-size: 50px; text-align: center;"> 
    <img src="../files/OCB_logo1_fifteenthdraft.jpg" style="width: 30%; padding-left: 10%;">
    <br>
+   <br>
+<br>
+<br>
+<div class="black">
+  <br>
    <p style="font-size: 100px; color: #F4C134;">About Plan Bee Farms</p>
+   <br>
+<div class="yellow">
 <div class="box"> <img src="../files/OCB_logo1_fifteenthdraft.jpg" style="width: 40%;">
     <p>Plan Bee Farms is located in Adamsville, OH and owned by Julie and Glenn Nestor.</p>
+</div>
 </div>
 <br>
 <div class="box">
@@ -130,11 +157,15 @@ a:visited{color: black;}
      <img src="../files/honey.jpg" style="width: 40%;">
  </div>   
  <br>
+ <div class="yellow">
  <div class="box"> <img src="../files/beekeeper.jpg" style="width: 40%;">
     <p>Want to start your own bee farm? Let us help! Visit our <a href="#">Beekeeping Equipment</a> page.</p>
 </div>
 </div>
+</div>
+</div>
 <br>
+<div class="parallax"></div>
 <br>
 <br>
 <br>
