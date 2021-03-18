@@ -6,7 +6,7 @@
 }
 
 svg {
-  position: absolute;
+  position: fixed;
 }
 
 
@@ -84,19 +84,15 @@ svg {
   color:#F4C134
 }
 
+
+
+
 .parallax {
-  /* The image used */
-  background-image: url("../files/beelogo_menu.png");
-
-  /* Set a specific height */
-  height: 500px; 
-  width: 100px;
-
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  
+  position:fixed; 
   z-index: 99999;
+  width:500px;
+}
+
+.parallax img {
+  width: 100%;
 }
