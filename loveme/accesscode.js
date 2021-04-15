@@ -1,5 +1,4 @@
 $(document).ready(function() {
-alert("bye");
     $("input[placeholder]").each(function () {
         $(this).attr('size', $(this).attr('placeholder').length);
     });
@@ -17,10 +16,11 @@ alert("bye");
 
     function checkInput(e) {
         var inputText = e.target.value;
-        alert("hi");
         if (inputText.toLowerCase() == "ozzie help")  {
             location.href = "loveme1.html";
-        } else if (inputText.toLowerCase() == "ozzie story") {
+        } else if (inputText.toLowerCase() == "special topics") {
+            location.href = "loveme1.html";}  
+        else if (inputText.toLowerCase() == "ozzie story") {
         location.href = "loveme2.html";} 
     }
 });
