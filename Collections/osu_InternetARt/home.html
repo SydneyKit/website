@@ -3,6 +3,8 @@
 
 <head>
     <title>OSU Art3001</title>
+    <link rel="stylesheet" href="../../navbar.css">
+    <link rel="stylesheet" href="../../text.css">
     <style>
         * {
             text-align: center
@@ -10,7 +12,8 @@
 
         /* The grid: Four equal columns that floats next to each other */
         .column {
-            float: left;
+            float: none;
+            display: inline-block;
             height: 192px;
             width: 192px;
             padding: 15px;
@@ -37,10 +40,11 @@
 
         /* The expanding image container */
         .container {
-            position: relative;
+            float:none;
+            display: inline-block;
             height: 540px;
             width: 960px;
-            display: none;
+            text-align: center;
         }
 
         /* Closable button inside the expanded image */
@@ -52,61 +56,16 @@
             font-size: 35px;
             cursor: pointer;
         }
-        .navbar {
-      overflow: hidden;
-      background-color: #EDCEE5;
-      text-align: center;
-      color: black;
-      position: fixed;
-      top: 0;
-      width: 100%;
-      z-index: 500;
-      height: min-content;
-    
-    }
-    .navbar a {
-  float: none;
-  display: inline-block;
-  color: black;
-  padding: 0px 16px;
-  text-decoration: none;
-  font-size: 60px;
-  vertical-align: middle;
-}
-
-.navbar a:hover {
-  background: #bbd5f2;
-  color: black;
-}
-
-.main {
-  padding: 16px;
-  margin-top: 30px;
-  height: 1500px;
-}
-@font-face {
-   font-family: SydType;
-   src: url(../files/Sydtype-Regular.otf);
-}
-
-@font-face {
-   font-family: SydType;
-   src: url(../files/Sydtype-Regular.otf);
-   font-weight: bold;
-}
-
-* {
-   font-family: SydType;
-}
     </style>
 </head>
 
-<body style="background-color:#F6F3F1">
+<body>
     <div class="navbar">
         <a href="../../home.html"><img src="../files/SK_logo2.png" width="81" height="45.6"> </a> 
         <a href="../../about.html" style="font-size: 40px;">About</a> 
         <a href="../../portfolio.html" style="font-size: 40px;">Portfolio</a>
        <a href="../../Collections/index.html" style="font-size: 40px;">Collections</a> 
+       <a href="../../shop.html" style="font-size: 40px;">Shop</a>
        <a href="../../contact.html" style="font-size: 40px;">Contact</a>
       </div>
       <br>
@@ -115,42 +74,42 @@
       <br>
       <div style="font-size: 30px; text-align: center;">
        <p style="font-size: 60px;"><b>Internet Art</b></p>
-        <nav>
-            <a href="exercises/index.html">Exercises</a>
-            <a href="blog/index.html">Blog</a>
+        <nav style="font-size: 40px;">
+           <span style="padding: 0px 40px;"> <a href="exercises/index.html">Exercises & Projects</a></span>
+           <span style="padding: 0px 40px;"> <a href="blog/index.html">Weekly Blog</a></span>
         </nav>
         <br>
         <br>
 
-    <p>Art 3001 : Internet Art is a class at The Ohio State University that was taken Spring 2021. This page has all
-        of the work done while in that class. </p>
+    <p style="margin-left: 10%; margin-right: 10%;">Art 3001 : Internet Art is a class at The Ohio State University that was taken Spring 2021. This page has all
+        of the work done while in that class. 
+    <br>
+<br>
+This entire website (SydneyKit.com) was created during this class.</p>
+
     <br>
     <p>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <body>
-
-            <div style="text-align:center">
-            </div>
-
             <!-- The four columns -->
             <div class="row">
                 <div class="column">
-                    <img src="../files/SK_logo_ver2.jpg" alt="Logo" style="width:100%" onclick="myFunction(this);">
+                    <img src="../files/SK_logo_ver2.jpg" alt="Webpage Design" style="width:100%" onclick="myFunction(this);">
                 </div>
                 <div class="column">
-                    <img src="../files/" alt="Code" style="width:100%" onclick="myFunction(this);">
+                    <img src="files/topoffalls.JPG" alt="Weekly Blogs" style="width:100%" onclick="myFunction(this);">
                 </div>
                 <div class="column">
-                    <img src="img/green screen.png" alt="Green Code" style="width:100%" onclick="myFunction(this);">
+                    <img src="files/anakin_padme.jpg" alt="Stylized Poem" style="width:100%" onclick="myFunction(this);">
                 </div>
                 <div class="column">
-                    <img src="img/internet art.jpg" alt="Internet Style" style="width:100%" onclick="myFunction(this);">
+                    <img src="files/mimedesign2_walk4.png" alt="Mime Game" style="width:100%" onclick="myFunction(this);">
                 </div>
             </div>
 
             <div class="container">
                 <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
-                <img id="expandedImg" style="width:100%">
+                <img id="expandedImg" style="width:100%;">
                 <div id="imgtext"></div>
             </div>
 
@@ -160,15 +119,18 @@
                     var imgText = document.getElementById("imgtext");
                     expandImg.src = imgs.src;
                     imgText.innerHTML = imgs.alt;
-                    expandImg.parentElement.style.display = "block";
+                    expandImg.parentElement.style.display = "inline-block";
                 }
             </script>
-</div>
+ 
         </body>
 
 </html>
 </p>
-
+<br>
+<br>
+<br>
+<br>
 <footer>Sydney Kit 2021 </footer>
 </body>
 
